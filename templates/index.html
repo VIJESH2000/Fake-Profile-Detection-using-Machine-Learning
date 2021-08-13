@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <style>
+fieldset{
+    background-color: #eeeeee;
+      width: 350px;
+}      
+legend{
+    background-color: gray;
+    color: white;
+    padding: 5px 10px;
+}
+input{
+    margin: 15px;
+}
+</style>
+    <title>TItle</title>
+</head>
+<body background="static\Twitter.jpg">
+<h1 style="font-size:60px;color: black;"><center>Fake Profile Identification</center></h1>
+<br>
+<form method="post" action="{{url_for('predict')}}">
+ <center>
+     <fieldset>
+    <legend>Fake Profile Identification :</legend>
+    </br>
+    Id:                <input type="number" name="id",placeholder="id"/>
+    </br>
+    Statuses_Count:    <input type="number" name="sts_cnt",placeholder="sts_cnt"/>
+    </br>
+    Followers_Count:   <input type="number" name="flrs_cnt",placeholder="flrs_cnt"/>
+    </br>
+    Friends_Count:     <input type="number" name="frds_cnt",placeholder="frds_cnt"/>
+    </br>
+    Favourites_Count:   <input type="number" name="fvts_cnt",placeholder="fvts_cnt"/>
+    </br>
+    Listed_Count:       <input type="number" name="lstd_cnt",placeholder="lstd_cnt"/>
+    </br>
+    Language_code:      <input type="number" name="lng_cde",placeholder="lng_cde"/>
+    </br>
+    </center>
+    </br><center>
+    <button type="submit" class="btn" >Predict</button>
+    </center>
+    </fieldset>
+</center>
+</form>
+</body>
+</html>

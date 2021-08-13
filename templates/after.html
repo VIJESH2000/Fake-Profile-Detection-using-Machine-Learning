@@ -1,0 +1,21 @@
+<html>
+    <body bgcolor="white">
+        <center>
+            <h1> PREDICTION : </h1>
+
+            {%if data == 0%}
+            <h1>FAKE</h1>
+            <img src='static\fake.svg'>
+
+
+            {%else%}
+            <h1>REAL</h1>
+            <img src='static\real.svg'>
+
+            {%endif%}
+
+            <br><br>
+            <a href='/'>go back to home page</a>
+        </center>
+    </body>
+</html>
